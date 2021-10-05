@@ -1,0 +1,50 @@
+vscode-cpp:
+  keyword:
+    - 'vc'
+  cmd: 
+    - 'call code "C:\Users\VULCAN\Desktop\m@0\study\vscode_cpp_workspace"'
+
+QQ:
+  keyword:
+    - 'q'
+  cmd:
+    - 'start D:\QQ\Bin\QQ'
+
+pycharm:
+  keyword:
+    - 'p'
+  cmd:
+    - 'start "" "D:\pycharm\PyCharm 2021.1.1\bin\pycharm64.exe"'
+    - 'start explorer "D:\pycharm_project"'
+
+devCpp:
+  keyword:
+    - 'dev'
+  cmd:
+    - 'start D:\Dev-Cpp\devcpp "C:\Users\VULCAN\Desktop\m@0\study\Dev_cpp_workspace\file\tmep.cpp"'
+    - 'start explorer "C:\Users\VULCAN\Desktop\m@0\study\Dev_cpp_workspace\file"'
+
+HomePage:
+  keyword:
+    - 'h'
+  cmd:
+    - 'start explorer "D:\HomePage\icanflyhigh.github.io\_posts"'
+
+VPN:
+  keyword:
+    - 'v'
+  cmd:
+    - 'start "" "D:\v2rayN\v2rayN-full\v2rayN.exe"'
+
+Quit:
+  keyword:
+    - 'quit'
+    - 'exit'
+  cmd:
+    - 'exit'
+
+QQMusic:
+  keyword:
+    - 'm'
+  cmd:
+    - 'start "" "H:\music\QQMusic\QQMusic1777.15.05.04\QQMusic.exe"'
