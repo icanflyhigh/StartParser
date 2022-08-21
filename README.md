@@ -1,19 +1,45 @@
 # StartParser
 
-`arg` -> `command` -> `application`
+自定义的命令行脚本启动工具
 
-在窗口中输入关键字来快速启动应用
+## 安装
 
-打造一个更加干净的桌面
+无需安装，直接解压压缩包
 
-在 config.yml 的`YML_PATH`中编辑 cmd.yml 的路径
+## 使用
 
-在 cmd.yml 中编辑，创建自己的快速启动方式。
+压缩包中包括: `StartParser.exe`, `config.yml`, `resource/cmd.yml`。
 
-+ 对象的名字可以随便取
+* 打开`StartParser.exe`，在窗口中输入关键字来快速启动应用。
+* `resource/cmd.yml`用于存放关键字以及对应所需执行的指令。
+* `resource/links` 文件夹下用于存放快捷方式，可使用快捷方式的名字作为关键字来打开快捷方式。
 
-+ `keyword`表示输入的关键字
-+ `cmd`表示执行的指令
-+  这两个对象下必须 有 `- ` 表示数组
+* `config.yml`用来指定的文件`resource/cmd.yml`和文件夹`resource/links`的位置。`YML_PATH`定义 `cmd.yml`的路径，`LINK_PATH`定义`resource/links`的路径。
 
-./dist/StartParser/StartParser.exe 是可执行文件，可以直接使用( 在config.yml, cmd.yml )格式，路径正确的情况下
+
+
+
+### 使用例子
+
+在`cmd.yml`中定义了如下：
+
+```yaml
+Test:
+  keyword:
+    - 'test'
+  cmd:
+    - 'start explorer "C:\"'
+    
+```
+
+
+
+如果在`StartParser.exe`中输入关键字 `test`, 则`StartParser.exe`执行`start explorer "C:\"`，打开一个文件夹。
+
+如果`resource/links`中存在 `a.lnk`且在在`StartParser.exe`中输入关键字`a`，则直接启动`a.lnk`。
+
+
+
+## TODO
+
+* [ ] GUI
