@@ -4,3 +4,5 @@
 dist/
 build/
 **.spec
+**/resource/
+install.bat

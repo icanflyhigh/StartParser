@@ -1,6 +1,12 @@
-Test:
+Test0:
   keyword:
-    - 'test'
+    - 'test0'
   cmd:
     - 'start explorer "D:\workspace"'
+    - 'start C:\Users\maozh\Desktop\Zhen\others\Snipaste.lnk'
+    - 'start C:\Users\maozh\Desktop\Zhen\others\clash.lnk'
+Test1:
+  keyword:
+    - 'test1'
+  cmd:
     - 'start explorer "D:\workspace"'

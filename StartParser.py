@@ -25,8 +25,14 @@ class StartParser:
 
     def add_cmd_list(self, keyword: str, cmdList: list):
         cmd = ""
+        isFirst = True
         for atomCmd in cmdList:
-            cmd = cmd + atomCmd + "\n"
+            if isFirst:
+                isFirst = False
+            else:
+                cmd = cmd + ' && '
+            cmd = cmd + atomCmd
+            # print(f"atomCmd:{atomCmd}")
         self.add_cmd(keyword, cmd)
 
     def add_cmd(self, keyword: str, cmd: str):
